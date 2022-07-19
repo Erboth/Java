@@ -1,0 +1,33 @@
+package horario;
+
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+
+
+
+public class Horario {
+
+      
+   
+    public static void main(String[] args) {
+        // TODO code application logic here
+        // Hora local
+       LocalTime queHoraEs = LocalTime.now();
+       System.out.println("En hora de tu zona es:" + queHoraEs);
+       //Zona horaria local
+       ZoneId horaLocal = ZoneId.systemDefault();
+       System.out.println("Tu zona es:" + horaLocal);
+        
+        //Hora en Paris
+        ZonedDateTime Paris = ZonedDateTime.now( ZoneId.of( "Europe/Paris" ) );
+        System.out.println("La fecha y hora en Paris es:" + Paris);
+       
+        //Hora en Montreal
+        ZonedDateTime Montreal = ZonedDateTime.now( ZoneId.of( "America/Montreal" ) );
+        System.out.println("La fecha y hora en Montreal es:" + Montreal);
+  
+          
+    }
+    
+}
