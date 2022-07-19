@@ -1,0 +1,34 @@
+package PI;
+
+import java.util.Scanner;
+
+class PI {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Scanner sc = new Scanner (System.in);
+        
+        //Pido datos de entrada
+        System.out.println("¿Qué precisión desea?:");
+        int n =sc.nextInt();
+        
+        //Resultado
+        System.out.println("pi = " + pi (n));
+
+    }
+
+    
+    public static double pi (int n) {
+        int d = 1, sig = 1;
+        double t, s = 0;
+        for(int i = 1; i <= n; i++) {
+
+           //el i++ significa que va a tener un incremento
+            t = (double) 1 / d * sig;
+            s += t;
+            d += 2;
+            sig *= -1;
+        }
+        return s * 4;
+    }
+}
