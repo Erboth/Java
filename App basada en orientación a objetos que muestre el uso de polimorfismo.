@@ -1,0 +1,37 @@
+package Polimorfismo;
+
+class Animal { // Esto es una clase padre de la que van a heredar las clases hijas
+      public void onomatopellaSonido() {
+        System.out.println("Sonido del animal");
+      }
+    }
+    class Gato extends Animal { //Esto es la clase Gato que es hija de la clase Animal y va a heredar de ella
+      public void onomatopellaSonido() {
+        System.out.println("Gato: Miau");
+      }
+    }
+    class Perro extends Animal {//Esto es la clase Perro que es hija de la clase Animal y va a heredar de ella
+      public void onomatopellaSonido() {
+        System.out.println("Perro: Guau");
+      }
+    }
+    class Lobo extends Animal {//Esto es la clase Lobo que es hija de la clase Animal y va a heredar de ella
+          public void onomatopellaSonido() {
+            System.out.println("Lobo:Auuuu");
+          }
+        }
+class Polimorfismo { //Aquí empieza el metodo polimorfimso
+
+    public static void main(String[ ] args) {
+          Animal a = new Perro();
+          Animal b = new Gato();
+          Animal c = new Lobo();
+          
+          //Aquí creamos las variables que tienen como referencia la clase Animal y las apuntamos a los objetos Perro, Gato y Lobo y llamamos a los métodos onomatopellaSonido
+          a.onomatopellaSonido();
+          b.onomatopellaSonido();
+          c.onomatopellaSonido();
+        
+        }
+
+}
