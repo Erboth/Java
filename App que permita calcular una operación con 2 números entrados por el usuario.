@@ -1,0 +1,34 @@
+package Aritmetica;
+
+import java.util.Scanner;
+
+class Aritmetica {
+    
+    public static int addition (int num1, int num2) {
+        return num1 + num2;
+    }
+    
+    public static int substraction (int num1, int num2) {
+        return num1 - num2;
+    }
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        
+        int primero, segundo;
+        Scanner sc =new Scanner (System.in);
+        System.out.println("Introduce un número:");
+        primero = sc.nextInt();
+        System.out.println("Introduce otro número:");
+        segundo = sc.nextInt();
+
+        System.out.println("Los dos números suman:" + addition(primero,segundo));
+        System.out.println("Los dos números restan:" + substraction(primero,segundo));
+        
+        /*System.out.println(primero + "+" + segundo + "=" + addition(primero,segundo));
+        System.out.println(primero + "-" + segundo + "=" + substraction(primero,segundo));*/
+        
+        
+    }
+
+}
