@@ -1,0 +1,31 @@
+package NumMenTriSup;
+
+class NumMenTriSup {
+
+     public static void main(String... z)
+     
+         {
+             min(new int[][] {{1,2,3},{4,5,6},{7,8,9}});
+             /*Aquí hemos indicado los valores de la matriz*/
+            
+         }
+         static void min(int d[][])
+         {
+             int min=d[0][0];
+             for(int i=0;i<d.length;i++)
+             {
+                 for (int j=(i+1)-1; j<d[i].length;j++)
+                     /*Aquí decimos que solo se fije en el triangulo superior*/
+             
+                 if (d[i][j] < min) {
+                      min = d[i][j];
+                     
+                    }
+             }
+             
+             
+         
+             System.out.println("El numero menor del triangulo superior de la matriz es:"+min);
+         }
+         
+}
