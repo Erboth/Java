@@ -1,0 +1,9 @@
+public class SaludoApp {
+ 
+    public static void main(String[] args) {
+ 
+        String nombre="Erboth";
+ 
+        System.out.println("Bienvenido "+nombre);
+    }
+}
